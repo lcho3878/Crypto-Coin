@@ -11,6 +11,8 @@
 		54E94DE12C8B030D001B8053 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E94DE02C8B030D001B8053 /* ContentView.swift */; };
 		54E94DE32C8B030D001B8053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E94DE22C8B030D001B8053 /* Assets.xcassets */; };
 		54E94DE62C8B030D001B8053 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E94DE52C8B030D001B8053 /* Preview Assets.xcassets */; };
+		54E94DEE2C8B04A8001B8053 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E94DED2C8B04A8001B8053 /* APIResponse.swift */; };
+		54E94DF32C8B0889001B8053 /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E94DF12C8B0889001B8053 /* Mock.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		54E94DE02C8B030D001B8053 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		54E94DE22C8B030D001B8053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54E94DE52C8B030D001B8053 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		54E94DED2C8B04A8001B8053 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		54E94DF22C8B0889001B8053 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Mock.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		54E94DDD2C8B030D001B8053 /* Crypto Coin */ = {
 			isa = PBXGroup;
 			children = (
+				54E94DEC2C8B0462001B8053 /* NetworkResponse */,
 				54E94DDE2C8B030D001B8053 /* Crypto_CoinApp.swift */,
 				54E94DE02C8B030D001B8053 /* ContentView.swift */,
 				54E94DE22C8B030D001B8053 /* Assets.xcassets */,
@@ -65,6 +70,15 @@
 				54E94DE52C8B030D001B8053 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		54E94DEC2C8B0462001B8053 /* NetworkResponse */ = {
+			isa = PBXGroup;
+			children = (
+				54E94DED2C8B04A8001B8053 /* APIResponse.swift */,
+				54E94DF12C8B0889001B8053 /* Mock.json */,
+			);
+			path = NetworkResponse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E94DF32C8B0889001B8053 /* Mock.json in Resources */,
 				54E94DE62C8B030D001B8053 /* Preview Assets.xcassets in Resources */,
 				54E94DE32C8B030D001B8053 /* Assets.xcassets in Resources */,
 			);
@@ -139,10 +154,22 @@
 			files = (
 				54E94DE12C8B030D001B8053 /* ContentView.swift in Sources */,
 				54E94DDF2C8B030D001B8053 /* Crypto_CoinApp.swift in Sources */,
+				54E94DEE2C8B04A8001B8053 /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		54E94DF12C8B0889001B8053 /* Mock.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54E94DF22C8B0889001B8053 /* en */,
+			);
+			name = Mock.json;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		54E94DE72C8B030D001B8053 /* Debug */ = {
