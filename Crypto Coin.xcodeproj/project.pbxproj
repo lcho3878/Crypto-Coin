@@ -14,6 +14,9 @@
 		54E94DEE2C8B04A8001B8053 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E94DED2C8B04A8001B8053 /* APIResponse.swift */; };
 		54E94DF32C8B0889001B8053 /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E94DF12C8B0889001B8053 /* Mock.json */; };
 		54E94DF52C8C33AC001B8053 /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E94DF42C8C33AC001B8053 /* MockManager.swift */; };
+		54E94DF72C8C43FE001B8053 /* TrendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E94DF62C8C43FE001B8053 /* TrendView.swift */; };
+		54E94DF92C8C440E001B8053 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E94DF82C8C440E001B8053 /* SearchView.swift */; };
+		54E94DFB2C8C4463001B8053 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E94DFA2C8C4463001B8053 /* FavoriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		54E94DED2C8B04A8001B8053 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		54E94DF22C8B0889001B8053 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Mock.json; sourceTree = "<group>"; };
 		54E94DF42C8C33AC001B8053 /* MockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockManager.swift; sourceTree = "<group>"; };
+		54E94DF62C8C43FE001B8053 /* TrendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendView.swift; sourceTree = "<group>"; };
+		54E94DF82C8C440E001B8053 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		54E94DFA2C8C4463001B8053 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				54E94DEC2C8B0462001B8053 /* NetworkResponse */,
 				54E94DDE2C8B030D001B8053 /* Crypto_CoinApp.swift */,
 				54E94DE02C8B030D001B8053 /* ContentView.swift */,
+				54E94DF62C8C43FE001B8053 /* TrendView.swift */,
+				54E94DF82C8C440E001B8053 /* SearchView.swift */,
+				54E94DFA2C8C4463001B8053 /* FavoriteView.swift */,
 				54E94DE22C8B030D001B8053 /* Assets.xcassets */,
 				54E94DE42C8B030D001B8053 /* Preview Content */,
 			);
@@ -157,7 +166,10 @@
 			files = (
 				54E94DE12C8B030D001B8053 /* ContentView.swift in Sources */,
 				54E94DF52C8C33AC001B8053 /* MockManager.swift in Sources */,
+				54E94DFB2C8C4463001B8053 /* FavoriteView.swift in Sources */,
+				54E94DF72C8C43FE001B8053 /* TrendView.swift in Sources */,
 				54E94DDF2C8B030D001B8053 /* Crypto_CoinApp.swift in Sources */,
+				54E94DF92C8C440E001B8053 /* SearchView.swift in Sources */,
 				54E94DEE2C8B04A8001B8053 /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
