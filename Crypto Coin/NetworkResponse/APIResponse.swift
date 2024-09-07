@@ -19,11 +19,15 @@ struct APIResponse: Decodable {
             let name: String
             let symbol: String
             let small: String
+            let score: Int
             let data: CoinData
             
             struct CoinData: Decodable, Hashable {
                 let price: Double
                 let priceChange: [String: Double]
+                var priceChangeKrw: Double {
+                    return priceChange["krw"]!
+                }
                 
                 enum CodingKeys: String, CodingKey {
                     case price
