@@ -8,36 +8,45 @@
 import Foundation
 
 struct APIResponse: Decodable {
-    let coins: Coin
+    let coins: [Coin]
     let nfts: [NFT]
     
-    struct Coin: Decodable {
-        let item: [Item]
+    struct Coin: Decodable, Hashable {
+        let item: Item
         
-        struct Item: Decodable {
+        struct Item: Decodable, Hashable {
             let id: String
             let name: String
             let symbol: String
             let small: String
             let data: CoinData
             
-            struct CoinData: Decodable {
+            struct CoinData: Decodable, Hashable {
                 let price: Double
-                let price_change_percentage_24h: Double
+                let priceChange: [String: Double]
+                
+                enum CodingKeys: String, CodingKey {
+                    case price
+                    case priceChange = "price_change_percentage_24h"
+                }
             }
         }
     }
     
-    struct NFT: Decodable {
-        let id: String
+    struct NFT: Decodable, Hashable {
         let name: String
         let symbol: String
         let thumb: String
         let data: NFTData
         
-        struct NFTData: Decodable {
-            let floor_price: Double
-            let floor_price_in_usd_24h_percentage_change: Double
+        struct NFTData: Decodable, Hashable {
+            let floorPrice: String
+            let floorPriceChange: String
+            
+            enum CodingKeys: String, CodingKey {
+                case floorPrice = "floor_price"
+                case floorPriceChange = "floor_price_in_usd_24h_percentage_change"
+            }
         }
     }
 }
