@@ -12,8 +12,8 @@ final class MockManager {
     
     private init() {}
     
-    func loadData() -> Data? {
-        let fileName = "Mock"
+    func loadData(fileName: String) -> Data? {
+        let fileName = fileName
         let extensionType = "json"
         
         guard let fileLocation = Bundle.main.url(forResource: fileName, withExtension: extensionType) else { return nil }

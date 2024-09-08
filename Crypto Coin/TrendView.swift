@@ -48,7 +48,7 @@ struct TrendView: View {
                 }
             }
             .task {
-                guard let data = MockManager.shared.loadData() else { return }
+                guard let data = MockManager.shared.loadData(fileName: "Mock") else { return }
                 do {
                     let result = try JSONDecoder().decode(APIResponse.self, from: data)
                     coins = result.coins
