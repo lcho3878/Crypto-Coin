@@ -17,26 +17,12 @@ struct SearchView: View {
         NavigationView {
             ScrollView {
                 VStack {
-                    ForEach(searchList, id: \.self) { item in
-                        HStack {
-                            AsyncImage(url: URL(string: item.thumb)) { result in
-                                result.image?
-                                    .resizable()
-                                    .scaledToFill()
-                            }
-                            .frame(width: 40, height: 40)
-                            VStack(alignment: .leading) {
-                                Text(item.attributedString(range: searchText))
-                                    .font(.title3)
-                                    .bold()
-                                Text(item.symbol)
-                                    .foregroundStyle(.gray)
-                            }
-                            Spacer()
-                            Image(systemName: "star")
-                                .foregroundStyle(.purple)
+                    ForEach(searchList, id: \.self) { coin in
+                        NavigationLink {
+                            ChartView(coin: coin)
+                        } label: {
+                            RowView(searchText: $searchText, coin: coin)
                         }
-                        .padding()
                     }
                 }
             }
@@ -53,6 +39,34 @@ struct SearchView: View {
             }
         }
         .searchable(text: $searchText, prompt: "코인 검색")
+    }
+    
+    struct RowView: View {
+        @Binding var searchText: String
+        let coin: Coin
+        
+        var body: some View {
+            HStack {
+                AsyncImage(url: URL(string: coin.thumb)) { result in
+                    result.image?
+                        .resizable()
+                        .scaledToFill()
+                }
+                .frame(width: 40, height: 40)
+                VStack(alignment: .leading) {
+                    Text(coin.attributedString(range: searchText))
+                        .foregroundStyle(.black)
+                        .font(.title3)
+                        .bold()
+                    Text(coin.symbol)
+                        .foregroundStyle(.gray)
+                }
+                Spacer()
+                Image(systemName: "star")
+                    .foregroundStyle(.purple)
+            }
+            .padding()
+        }
     }
 }
 

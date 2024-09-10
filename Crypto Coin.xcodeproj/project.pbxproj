@@ -19,6 +19,7 @@
 		54E94DFB2C8C4463001B8053 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E94DFA2C8C4463001B8053 /* FavoriteView.swift */; };
 		54E94DFE2C8DCACA001B8053 /* CoinSearchMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E94DFC2C8DCACA001B8053 /* CoinSearchMock.json */; };
 		54E94E002C8DCADE001B8053 /* CoinSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E94DFF2C8DCADE001B8053 /* CoinSearchResponse.swift */; };
+		54E94E022C8DD896001B8053 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E94E012C8DD896001B8053 /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		54E94DFA2C8C4463001B8053 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		54E94DFD2C8DCACA001B8053 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/CoinSearchMock.json; sourceTree = "<group>"; };
 		54E94DFF2C8DCADE001B8053 /* CoinSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSearchResponse.swift; sourceTree = "<group>"; };
+		54E94E012C8DD896001B8053 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				54E94DF62C8C43FE001B8053 /* TrendView.swift */,
 				54E94DF82C8C440E001B8053 /* SearchView.swift */,
 				54E94DFA2C8C4463001B8053 /* FavoriteView.swift */,
+				54E94E012C8DD896001B8053 /* ChartView.swift */,
 				54E94DE22C8B030D001B8053 /* Assets.xcassets */,
 				54E94DE42C8B030D001B8053 /* Preview Content */,
 			);
@@ -176,6 +179,7 @@
 				54E94DF52C8C33AC001B8053 /* MockManager.swift in Sources */,
 				54E94DFB2C8C4463001B8053 /* FavoriteView.swift in Sources */,
 				54E94DF72C8C43FE001B8053 /* TrendView.swift in Sources */,
+				54E94E022C8DD896001B8053 /* ChartView.swift in Sources */,
 				54E94DDF2C8B030D001B8053 /* Crypto_CoinApp.swift in Sources */,
 				54E94DF92C8C440E001B8053 /* SearchView.swift in Sources */,
 				54E94DEE2C8B04A8001B8053 /* APIResponse.swift in Sources */,

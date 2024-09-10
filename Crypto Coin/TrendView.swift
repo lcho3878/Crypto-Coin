@@ -11,7 +11,7 @@ struct TrendView: View {
     typealias Coin = APIResponse.Coin
     
     @State private var coins: [Coin] = []
-    let rows: [GridItem] = Array(repeating: .init(.fixed(80)), count: 3)
+    let rows: [GridItem] = Array(repeating: .init(.fixed(80)), count: 4)
     
     var body: some View {
         NavigationView {
